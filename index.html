@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week in My Life ✿</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- dreamy floating background blobs -->
+    <div class="bg" aria-hidden="true">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+      <span class="blob b3"></span>
+      <span class="grain"></span>
+    </div>
+
+    <header class="wrap hero">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand-mark">✿</span>
+          <span class="brand-text">week in my life</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#job">Job</a>
+          <a href="#week">Week</a>
+          <a href="#desks">Desks</a>
+          <a href="#process">Process</a>
+          <a href="#vibes">Vibes</a>
+          <a href="#playlists">Playlists</a>
+        </div>
+      </nav>
+
+      <div id="top" class="hero-grid">
+        <section class="hero-card reveal">
+          <p class="kicker">softly documenting the chaos ✨</p>
+          <h1>
+            Stacey’s<br />
+            <span class="accent">Week in My Life</span>
+          </h1>
+          <p class="lede">
+            A tiny scrapbook of work wins, snack moments, mild drama, and whatever my brain decided was
+            a personality this week.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#week">
+              <span>See the week</span>
+              <span class="icon" aria-hidden="true">→</span>
+            </a>
+            <button class="btn ghost" id="confettiBtn" type="button">
+              <span class="icon" aria-hidden="true">✦</span>
+              <span>tiny sparkle</span>
+            </button>
+          </div>
+
+          <div class="mini-stats" role="list" aria-label="Quick week stats">
+            <div class="pill" role="listitem">
+              <span class="pill-emoji" aria-hidden="true">☕️</span>
+              <span><strong>5</strong> lattes</span>
+            </div>
+            <div class="pill" role="listitem">
+              <span class="pill-emoji" aria-hidden="true">🚴🏻‍♀️</span>
+              <span><strong>2</strong> spin classes</span>
+            </div>
+            <div class="pill" role="listitem">
+              <span class="pill-emoji" aria-hidden="true">💻</span>
+              <span><strong>1</strong> quick website</span>
+            </div>
+          </div>
+        </section>
+
+        <aside class="hero-side reveal delay-1">
+          <div class="polaroid">
+            <div class="polaroid-img" aria-hidden="true">
+              <img src="images/me.png" class="img-fluid" alt="Office life ugh" />
+            </div>
+            <div class="polaroid-caption">
+              <p><strong>Snapshot:</strong> me pretending my life isn’t mostly calendars and snacks.</p>
+              <p class="tiny">Updated: <span id="todayText"></span></p>
+            </div>
+          </div>
+
+          <!-- <div class="quote-card reveal delay-2">
+            <p class="quote">“You miss 100% of the shots you don’t take”</p>
+            <div class="quote-meta">
+              <span>&mdash; Wayne Gretzky<br>
+                &mdash; Michael Scott<br>
+                &mdash; Me
+              </span>
+            </div>
+          </div> -->
+        </aside>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <!-- JOB / BUSINESS CARD -->
+      <section id="job" class="section">
+        <div class="section-head reveal">
+          <h2>My Job ✿</h2>
+          <p class="sub">
+            A business-card moment — because yes, I do occasionally do productive things.
+          </p>
+        </div>
+
+        <div class="job-grid">
+          <article class="biz-card reveal">
+            <div class="biz-top">
+              <div class="avatar" aria-hidden="true">
+                <span>SM</span>
+              </div>
+
+              <div class="biz-title">
+                <h3>Stacey Miguel</h3>
+                <p class="role">Multimedia Specialist</p>
+              </div>
+
+            </div>
+
+            <div class="biz-body">
+              <div class="biz-line">
+                <span class="label">Focus</span>
+                <span class="value">Front-end builds, tidy components, cute interactions</span>
+              </div>
+              <!-- <div class="biz-line">
+                <span class="label">This week’s win</span>
+                <span class="value">Shipped a feature without crying (much)</span>
+              </div> -->
+              <!-- <div class="biz-line">
+                <span class="label">Tiny flex</span>
+                <span class="value">I name my CSS variables like a poet</span>
+              </div> -->
+            </div>
+
+            <!-- <div class="biz-actions">
+              <a class="chip" href="#week">Weekly recap</a>
+              <a class="chip" href="#vibes">Vibe check</a>
+              <a class="chip" href="#playlists">My playlists</a>
+            </div> -->
+
+            <div class="biz-footer">
+              <span class="mono">smiguel@bowvalleycollege.ca</span>
+            </div>
+          </article>
+
+          <aside class="work-notes reveal delay-1">
+            <div class="note">
+              <h4>Work energy</h4>
+              <p>
+                A mix of deep focus + snack breaks + “why is this div doing that” + office DJing.
+              </p>
+            </div>
+            <!-- <div class="note">
+              <h4>What I’m building</h4>
+              <ul class="list">
+                <li>One cute interface at a time</li>
+                <li>Little animations that feel ✨alive✨</li>
+                <li>Layouts that behave on mobile</li>
+              </ul>
+            </div> -->
+          </aside>
+        </div>
+      </section>
+
+      <!-- WEEK TIMELINE -->
+      <section id="week" class="section">
+        <div class="section-head reveal">
+          <h2>The Week ✿</h2>
+          <p class="sub">A quick timeline of the week.</p>
+        </div>
+
+        <div class="week-grid">
+          <!-- Day cards -->
+          <article class="day reveal">
+            <div class="day-top">
+              <h3>Mon</h3>
+              <span class="tag">productive-ish</span>
+            </div>
+            <p>1 min. scrum bc my coworker forgot that our boss was on vaycay</p>
+            <div class="moods">
+              <span>🤦🏻‍♀️</span><span>☕</span><span>💻</span>
+            </div>
+          </article>
+
+          <article class="day reveal delay-1">
+            <div class="day-top">
+              <h3>Tue</h3>
+              <span class="tag">didn’t work</span>
+            </div>
+            <p>N/A</p>
+            <!-- <div class="moods">
+              <span>🧊</span><span>📅</span><span>😌</span>
+            </div> -->
+          </article>
+
+          <article class="day reveal delay-2">
+            <div class="day-top">
+              <h3>Wed</h3>
+              <span class="tag">1/2 day</span>
+            </div>
+            <p>I can’t remember what I did, so I must’ve been busy</p>
+            <div class="moods">
+              <span>✨</span><span>📥</span><span>📅</span>
+            </div>
+          </article>
+
+          <article class="day reveal">
+            <div class="day-top">
+              <h3>Thu</h3>
+              <span class="tag">long lunch</span>
+            </div>
+            <p>First in the office, last to leave (there was literally only 3 of us there)</p>
+            <div class="moods">
+              <span>🛍️</span><span>🌯</span><span>🫠</span>
+            </div>
+          </article>
+
+          <article class="day reveal delay-1">
+            <div class="day-top">
+              <h3>Fri</h3>
+              <span class="tag">multitasking</span>
+            </div>
+            <p>Worked while doing laundry and having Love Island: All Stars on in the background</p>
+            <div class="moods">
+              <span>🧺</span><span>🏝️</span><span>🎧</span>
+            </div>
+          </article>
+
+          <article class="day highlight reveal delay-2">
+            <div class="day-top">
+              <h3>Weekend</h3>
+              <span class="tag">recharge</span>
+            </div>
+            <p>Staying in and being cozy (minus being here rn)</p>
+            <div class="moods">
+              <span>🛋️</span><span>📺</span><span>🏈</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- DESKS -->
+      <section id="desks" class="section">
+        <div class="section-head reveal">
+          <h2>My Two Desks ✿</h2>
+          <p class="sub">Same brain, different habitats: WFH cozy vs office focus.</p>
+        </div>
+
+        <div class="desks-grid">
+          <!-- WFH -->
+           <article class="desk-card reveal">
+            <div class="desk-top">
+              <h3>WFH Desk</h3>
+              <span class="tag">cozy mode</span>
+            </div>
+
+            <div class="desk-media" aria-hidden="true">
+              <img src="images/wfh-desk.png" class="img-fluid" alt="My wfh desk" />
+            </div>
+
+            <div class="desk-details">
+              <div class="mini-line">
+                <span class="label">Vibe</span>
+                <span class="value">Soft lighting + crisp drink energy</span>
+              </div>
+              <div class="mini-line">
+                <span class="label">Essentials</span>
+                <span class="value">Laptop stand, Bubly, throw blanket</span>
+              </div>
+              <div class="mini-line">
+                <span class="label">Current resident</span>
+                <span class="value">Me + my Hello Kitty Ninja Turtles (turtle power!!)</span>
+              </div>
+            </div>
+
+            <div class="desk-badges">
+              <span class="mini-tag">soft focus</span>
+              <span class="mini-tag">comfy</span>
+              <span class="mini-tag">snack nearby</span>
+            </div>
+          </article>
+
+          <!-- OFFICE -->
+           <article class="desk-card reveal delay-1">
+            <div class="desk-top">
+              <h3>Office Desk</h3>
+              <span class="tag">focus era</span>
+            </div>
+
+            <div class="desk-media alt" aria-hidden="true">
+              <img src="images/bvc-desk.png" class="img-fluid" alt="My office desk" />
+            </div>
+
+            <div class="desk-details">
+              <div class="mini-line">
+                <span class="label">Vibe</span>
+                <span class="value">Structured + locked-in + always ready to yap</span>
+              </div>
+              <div class="mini-line">
+                <span class="label">Essentials</span>
+                <span class="value">Second + third monitor, iced latte, nice smelling lotion</span>
+              </div>
+              <div class="mini-line">
+                <span class="label">Power move</span>
+                <span class="value">Tetris light on = I’m at my desk</span>
+              </div>
+            </div>
+
+            <div class="desk-badges">
+              <span class="mini-tag">deep work</span>
+              <span class="mini-tag">clean</span>
+              <span class="mini-tag">meeting-ready</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROCESS DIAGRAM -->
+      <section id="process" class="section">
+        <div class="section-head reveal">
+          <h2>Work Process ✿</h2>
+          <p class="sub">A cute little flow of how course content turns into a polished learning experience.</p>
+        </div>
+
+        <div class="process-card reveal">
+          <div class="process-row">
+            <div class="process-node duo">
+              <div class="node-top">
+                <span class="node-icon" aria-hidden="true">🧑‍🏫</span>
+                <div>
+                  <h3>Subject Matter Expert</h3>
+                  <p>Provides expertise + source content</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="process-plus" aria-hidden="true">+</div>
+
+            <div class="process-node duo">
+              <div class="node-top">
+                <span class="node-icon" aria-hidden="true">🧩</span>
+                <div>
+                  <h3>Learning Design Consultant</h3>
+                  <p>Structures the course + learning flow</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="process-arrow" aria-hidden="true">
+            <span class="arrow-line"></span>
+            <span class="arrow-head">➜</span>
+          </div>
+
+          <div class="process-row single">
+            <div class="process-node highlight">
+              <div class="node-top">
+                <span class="node-icon" aria-hidden="true">🎛️</span>
+                <div>
+                  <h3>Me (Media)</h3>
+                  <p>Builds the visuals + interactions + polish</p>
+                </div>
+              </div>
+
+              <div class="node-bullets">
+                <span class="chip">HTML / CSS / JS</span>
+                <span class="chip">UI / UX</span>
+                <span class="chip">Media assets</span>
+                <span class="chip">Quality checks</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="process-arrow" aria-hidden="true">
+            <span class="arrow-line"></span>
+            <span class="arrow-head">➜</span>
+          </div>
+
+          <div class="process-row single">
+            <div class="process-node">
+              <div class="node-top">
+                <span class="node-icon" aria-hidden="true">📝</span>
+                <div>
+                  <h3>Revisions</h3>
+                  <p>Feedback loop until it’s ✨chef’s kiss✨</p>
+                </div>
+              </div>
+
+              <div class="rev-rail" aria-hidden="true">
+                <span class="rev-dot"></span>
+                <span class="rev-dot"></span>
+                <span class="rev-dot"></span>
+              </div>
+
+              <p class="tiny" style="margin: 10px 0 0;">
+                Usually: adjust content → tweak visuals → refine interactions → finalize.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIBES: ailments + snack -->
+      <section id="vibes" class="section">
+        <div class="section-head reveal">
+          <h2>Vibe Check ✿</h2>
+          <p class="sub">The silly little extras that make a week a week.</p>
+        </div>
+
+        <div class="vibes-grid">
+          <article class="panel reveal">
+            <div class="panel-head">
+              <h3>Current Ailments</h3>
+              <span class="panel-icon" aria-hidden="true">🩹</span>
+            </div>
+
+            <div class="ailments">
+              <button class="ailment" type="button">
+                <span class="a-emoji" aria-hidden="true">🦵🏻</span>
+                <span class="a-text">
+                  <strong>Left knee pain + right Achilles pain</strong>
+                  <small>why on each leg?</small>
+                </span>
+              </button>
+
+              <button class="ailment" type="button">
+                <span class="a-emoji" aria-hidden="true">🧠</span>
+                <span class="a-text">
+                  <strong>Overthinking</strong>
+                  <small>as a hobby, unfortunately</small>
+                </span>
+              </button>
+
+              <button class="ailment" type="button">
+                <span class="a-emoji" aria-hidden="true">❓</span>
+                <span class="a-text">
+                  <strong>Random stiffness</strong>
+                  <small>why am I shaped like a question mark?</small>
+                </span>
+              </button>
+            </div>
+
+            <p class="tiny hint">Tip: click one for a tiny bounce ✨</p>
+          </article>
+
+          <article class="panel snack reveal delay-1">
+            <div class="panel-head">
+              <h3>Sweet Treat of the Week</h3>
+              <span class="panel-icon" aria-hidden="true">🍰</span>
+            </div>
+
+            <div class="snack-card">
+              <div class="snack-image">
+                <img src="images/snack.png" alt="Mascarpone + brownie croissant" />
+              </div>
+
+              <div class="snack-info">
+                <p class="snack-name">Mascarpone + brownie croissant</p>
+                <p class="tiny">
+                  Rating:
+                  <span aria-hidden="true">⭐️⭐️⭐️⭐️⭐️</span>
+                  <span class="sr-only">5 out of 5</span>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel reveal delay-2">
+            <div class="panel-head">
+              <h3>Mini Gratitude</h3>
+              <span class="panel-icon" aria-hidden="true">💐</span>
+            </div>
+            <ul class="list">
+              <li>One really good laugh</li>
+              <li>Being cozy and warm</li>
+              <li>Sunny window light</li>
+              <li>Delicious pastries</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- PLAYLISTS -->
+      <section id="playlists" class="section">
+        <div class="section-head reveal">
+          <h2>Playlists ✿</h2>
+          <p class="sub">Playlists I’ve been listening to at work this week.</p>
+        </div>
+
+        <div class="playlist-grid">
+          <article class="playlist reveal">
+            <div class="playlist-top">
+              <h3>night pop</h3>
+            </div>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbcP8BbYEQaO?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </article>
+
+          <article class="playlist reveal delay-1">
+            <div class="playlist-top">
+              <h3>office tunez</h3>
+            </div>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4FLljC4g1Cf7GETD3uNnik?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </article>
+
+          <article class="playlist reveal delay-2">
+            <div class="playlist-top">
+              <h3>throwback thursday</h3>
+            </div>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWwaxRea1LWS?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </article>
+        </div>
+
+      </section>
+
+      <footer class="footer reveal">
+        <p>
+          Made with ✿ and a reasonable amount of snacks.
+          <span class="tiny">&copy; 2026</span>
+        </p>
+      </footer>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
